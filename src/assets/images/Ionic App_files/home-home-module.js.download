@@ -1,0 +1,215 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["home-home-module"],{
+
+/***/ "A3+G":
+/*!*********************************************!*\
+  !*** ./src/app/home/home-routing.module.ts ***!
+  \*********************************************/
+/*! exports provided: HomePageRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageRoutingModule", function() { return HomePageRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home.page */ "zpKS");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+
+
+
+
+
+const routes = [
+    {
+        path: '',
+        component: _home_page__WEBPACK_IMPORTED_MODULE_3__["HomePage"],
+    }
+];
+let HomePageRoutingModule = class HomePageRoutingModule {
+    constructor(navController, router) {
+        this.navController = navController;
+        this.router = router;
+    }
+};
+HomePageRoutingModule.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["NavController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+HomePageRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], HomePageRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "WcN3":
+/*!***************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.page.html ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-content fullscreen>\n\n  <ion-item  class=\"logo\"></ion-item>\n\n  <ion-toolbar id=\"border\">\n    \n    <h3>Welcome</h3>\n    <form [formGroup]=\"ionicForm\" (ngSubmit)=\"submitForm()\" novalidate>\n    <ion-item>\n  \n      <ion-label position=\"floating\" class=\"email\">Email</ion-label>\n      \n      <ion-input type=\"email\" formControlName=\"email\" required></ion-input>\n    \n    </ion-item>\n  \n    <ion-item>\n  \n      <ion-label position=\"floating\" class=\"email\">Password</ion-label>\n      \n      <ion-input type=\"password\"  formControlName=\"password\" required></ion-input>\n    \n    </ion-item>\n  <div>\n    <ion-button expand=\"block\" fill=\"outline\" shape=\"round\" color=\"danger\" class=\"button\" type=\"submit\">Sign In</ion-button>\n    <ion-text routerLink=\"/forgot-password\" router-Direction=\"forward\">\n          Forgot Password?\n        </ion-text>\n        <ion-button expand=\"block\" fill=\"solid\" shape=\"round\" class=\"Rbutton\" routerLink=\"/sign-in\" router-Direction=\"forward\">Create Account</ion-button>\n  \n      </div>\n      </form>\n \n  </ion-toolbar>\n  </ion-content>\n\n\n\n\n  \n  \n");
+
+/***/ }),
+
+/***/ "ct+p":
+/*!*************************************!*\
+  !*** ./src/app/home/home.module.ts ***!
+  \*************************************/
+/*! exports provided: HomePageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageModule", function() { return HomePageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home.page */ "zpKS");
+/* harmony import */ var _home_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home-routing.module */ "A3+G");
+
+
+
+
+
+
+
+let HomePageModule = class HomePageModule {
+};
+HomePageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["IonicModule"],
+            _home_routing_module__WEBPACK_IMPORTED_MODULE_6__["HomePageRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"]
+        ],
+        declarations: [_home_page__WEBPACK_IMPORTED_MODULE_5__["HomePage"]]
+    })
+], HomePageModule);
+
+
+
+/***/ }),
+
+/***/ "f6od":
+/*!*************************************!*\
+  !*** ./src/app/home/home.page.scss ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("ion-content {\n  --background: url('background1.jpg');\n  --background-repeat: no-repeat;\n  --background-size: cover;\n  z-index: 2;\n}\n\nh3 {\n  margin-top: 40px;\n  margin-left: 30px;\n  font-weight: bold;\n}\n\n.email {\n  color: grey;\n}\n\nion-item {\n  margin-top: 25px;\n  margin-left: 40px;\n  margin-right: 40px;\n}\n\nion-button {\n  text-transform: capitalize;\n  margin: 40px;\n}\n\n.button {\n  --padding-top: 30px;\n  --padding-bottom: 30px;\n}\n\nion-text {\n  color: grey;\n}\n\ndiv {\n  text-align: center;\n}\n\n.Rbutton {\n  --background: rgb(255,100,87);\n  --background: linear-gradient(90deg, rgba(255,100,87,1) 0%, rgba(223,37,85,1) 100%);\n}\n\n#border {\n  border-width: 3px;\n  border-color: white;\n  border-style: solid;\n  border-top-left-radius: 60px;\n  border-top-right-radius: 60px;\n  z-index: 1;\n  background-color: white;\n  position: fixed;\n  left: 0%;\n  right: 0%;\n  bottom: 0%;\n}\n\n.logo {\n  --background: url('logo.JPG');\n  position: fixed;\n  top: 20px;\n  width: 210px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGhvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0NBQUE7RUFDQSw4QkFBQTtFQUNBLHdCQUFBO0VBQ0QsVUFBQTtBQUNEOztBQUdBO0VBQ0UsZ0JBQUE7RUFDQSxpQkFBQTtFQUNGLGlCQUFBO0FBQUE7O0FBSUE7RUFFQSxXQUFBO0FBRkE7O0FBTUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFIQTs7QUFPQTtFQUVBLDBCQUFBO0VBRUEsWUFBQTtBQU5BOztBQVdBO0VBQ0UsbUJBQUE7RUFDQSxzQkFBQTtBQVJGOztBQVlBO0VBRUEsV0FBQTtBQVZBOztBQWNBO0VBQ0Usa0JBQUE7QUFYRjs7QUFjQTtFQUVFLDZCQUFBO0VBQ0YsbUZBQUE7QUFaQTs7QUFrQkE7RUFDQSxpQkFBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSw0QkFBQTtFQUNBLDZCQUFBO0VBQ0EsVUFBQTtFQUNBLHVCQUFBO0VBQ0EsZUFBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtBQWZBOztBQW1CQTtFQUVDLDZCQUFBO0VBQ0QsZUFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0FBakJBIiwiZmlsZSI6ImhvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLWNvbnRlbnR7XG4gIC0tYmFja2dyb3VuZDogdXJsKC4uLy4uL2Fzc2V0cy9pbWFnZXMvYmFja2dyb3VuZDEuanBnKTtcbiAgLS1iYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAtLWJhY2tncm91bmQtc2l6ZTogY292ZXI7IFxuIHotaW5kZXg6IDI7XG5cbn1cblxuaDN7XG4gIG1hcmdpbi10b3A6IDQwcHg7XG4gIG1hcmdpbi1sZWZ0OjMwcHg7XG5mb250LXdlaWdodDogYm9sZDtcblxufVxuXG4uZW1haWx7XG5cbmNvbG9yOiBncmV5O1xuXG59XG5cbmlvbi1pdGVte1xubWFyZ2luLXRvcDogMjVweDtcbm1hcmdpbi1sZWZ0OiA0MHB4O1xubWFyZ2luLXJpZ2h0OiA0MHB4O1xuXG59XG5cbmlvbi1idXR0b257XG5cbnRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuXG5tYXJnaW46IDQwcHg7XG5cblxufVxuXG4uYnV0dG9ue1xuICAtLXBhZGRpbmctdG9wOiAzMHB4O1xuICAtLXBhZGRpbmctYm90dG9tOiAzMHB4O1xuXG59XG5cbmlvbi10ZXh0e1xuXG5jb2xvcjogZ3JleTtcblxuXG59XG5kaXZ7XG4gIHRleHQtYWxpZ246ICBjZW50ZXI7XG59XG5cbi5SYnV0dG9ue1xuXG4gIC0tYmFja2dyb3VuZDogcmdiKDI1NSwxMDAsODcpO1xuLS1iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoMjU1LDEwMCw4NywxKSAwJSwgcmdiYSgyMjMsMzcsODUsMSkgMTAwJSk7XG5cbn1cblxuXG5cbiNib3JkZXJ7XG5ib3JkZXItd2lkdGg6IDNweDtcbmJvcmRlci1jb2xvcjogd2hpdGU7XG5ib3JkZXItc3R5bGU6IHNvbGlkO1xuYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogNjBweDtcbmJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiA2MHB4O1xuei1pbmRleDogMTtcbmJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xucG9zaXRpb246IGZpeGVkO1xubGVmdDogMCU7XG5yaWdodDogMCU7XG5ib3R0b206IDAlO1xufVxuXG5cbi5sb2dve1xuXG4gLS1iYWNrZ3JvdW5kOiB1cmwoLi4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvLkpQRyk7XG5wb3NpdGlvbjogZml4ZWQ7XG50b3A6IDIwcHg7XG53aWR0aDogMjEwcHg7XG4gIFxufVxuXG4iXX0= */");
+
+/***/ }),
+
+/***/ "zpKS":
+/*!***********************************!*\
+  !*** ./src/app/home/home.page.ts ***!
+  \***********************************/
+/*! exports provided: HomePage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePage", function() { return HomePage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_home_page_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./home.page.html */ "WcN3");
+/* harmony import */ var _home_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.page.scss */ "f6od");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+
+
+
+
+
+
+let HomePage = class HomePage {
+    constructor(formBuilder, toastController) {
+        this.formBuilder = formBuilder;
+        this.toastController = toastController;
+        this.isSubmitted = false;
+    }
+    ngOnInit() {
+        this.ionicForm = this.formBuilder.group({
+            email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')]],
+            password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].minLength(8),]],
+        });
+    }
+    get errorControl() {
+        return this.ionicForm.controls;
+    }
+    submitForm() {
+        var _a, _b, _c, _d;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            this.isSubmitted = true;
+            if (this.isSubmitted && ((_a = this.ionicForm.controls.email.errors) === null || _a === void 0 ? void 0 : _a.required)) {
+                const toast = yield this.toastController.create({
+                    message: 'Email is required.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_b = this.ionicForm.controls.email.errors) === null || _b === void 0 ? void 0 : _b.pattern)) {
+                const toast = yield this.toastController.create({
+                    message: 'Please provide valid email id.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_c = this.ionicForm.controls.password.errors) === null || _c === void 0 ? void 0 : _c.required)) {
+                const toast = yield this.toastController.create({
+                    message: 'Password is required.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_d = this.ionicForm.controls.password.errors) === null || _d === void 0 ? void 0 : _d.minLength)) {
+                const toast = yield this.toastController.create({
+                    message: 'Password should be atleast 8 characters.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (!this.ionicForm.valid) {
+                console.log('Please provide all the required values!');
+                return false;
+            }
+            else {
+                console.log(this.ionicForm.value);
+            }
+        });
+    }
+};
+HomePage.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ToastController"] }
+];
+HomePage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-home',
+        template: _raw_loader_home_page_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_home_page_scss__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], HomePage);
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=home-home-module.js.map

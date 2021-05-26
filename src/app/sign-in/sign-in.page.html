@@ -1,0 +1,68 @@
+
+<ion-content fullscreen>
+
+  <ion-buttons>
+    <ion-back-button defaultHref="/home"></ion-back-button>
+  </ion-buttons>
+
+  <ion-item  class="logo"></ion-item>
+
+  <ion-toolbar id="border">
+    
+    <h3>Create Account</h3>
+    <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item>
+  
+      <ion-label position="floating" class="email">First Name</ion-label>
+      
+      <ion-input type="text" formControlName="name" required></ion-input>
+    
+    </ion-item>
+   
+    <ion-item>
+  
+      <ion-label position="floating" class="email">Last Name</ion-label>
+      
+      <ion-input  formControlName="lastname" type="text" required></ion-input>
+    
+    </ion-item>
+     
+  
+    <ion-item>
+  
+      <ion-label position="floating" class="email">Email</ion-label>
+      
+      <ion-input formControlName="email" type="email" required></ion-input>
+    
+    </ion-item>
+  
+    <ion-item>
+  
+      <ion-label position="floating" class="email">Password</ion-label>
+      
+      <ion-input formControlName="password" type="password" required></ion-input>
+    
+    </ion-item>
+
+    
+
+  <div>
+    <ion-button expand="block" fill="solid" shape="round" color="danger" class="Rbutton" type="submit" >Submit</ion-button>
+    <ion-text routerLink="/home" router-Direction="forward" id="margin">
+      Already have an account?
+    </ion-text> 
+    <ion-text routerLink="/home" router-Direction="forward" color="danger" id="margin">
+          Sign-In
+        </ion-text>
+        
+      </div>
+    </form>
+ 
+  </ion-toolbar>
+  </ion-content>
+
+
+
+
+  
+  

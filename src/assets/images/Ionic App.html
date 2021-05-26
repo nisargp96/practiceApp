@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:8100/home -->
+<html lang="en" class="plt-iphone plt-ios plt-phablet plt-mobile plt-mobileweb ios hydrated" mode="ios"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style data-styles="">ion-select-popover,ion-select,ion-select-option,ion-menu-button,ion-menu,ion-menu-toggle,ion-action-sheet,ion-fab-button,ion-fab,ion-fab-list,ion-refresher-content,ion-refresher,ion-alert,ion-back-button,ion-loading,ion-toast,ion-card,ion-card-content,ion-card-header,ion-card-subtitle,ion-card-title,ion-item-option,ion-item-options,ion-item-sliding,ion-infinite-scroll-content,ion-infinite-scroll,ion-reorder,ion-reorder-group,ion-segment-button,ion-segment,ion-tab-button,ion-tab-bar,ion-chip,ion-modal,ion-popover,ion-searchbar,ion-app,ion-buttons,ion-content,ion-footer,ion-header,ion-router-outlet,ion-title,ion-toolbar,ion-route,ion-route-redirect,ion-router,ion-router-link,ion-avatar,ion-badge,ion-thumbnail,ion-col,ion-grid,ion-row,ion-nav,ion-nav-link,ion-slide,ion-slides,ion-checkbox,ion-img,ion-input,ion-progress-bar,ion-range,ion-split-pane,ion-text,ion-textarea,ion-toggle,ion-virtual-scroll,ion-picker,ion-datetime,ion-picker-column,ion-radio,ion-radio-group,ion-spinner,ion-backdrop,ion-ripple-effect,ion-button,ion-icon,ion-item-divider,ion-item-group,ion-note,ion-skeleton-text,ion-item,ion-label,ion-list,ion-list-header{visibility:hidden}.hydrated{visibility:inherit}</style>
+  <title>Ionic App</title>
+
+  <!--<base href="/">--><base href=".">
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <style>html.plt-mobile ion-app{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}html.plt-mobile ion-app [contenteditable]{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}ion-app.force-statusbar-padding{--ion-safe-area-top:20px}</style><style>.sc-ion-buttons-ios-h{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-webkit-transform:translateZ(0);transform:translateZ(0);z-index:99}.sc-ion-buttons-ios-s ion-button{--padding-top:0;--padding-bottom:0;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0}.sc-ion-buttons-ios-s ion-button{--padding-start:5px;--padding-end:5px;margin-left:2px;margin-right:2px;height:32px;font-size:17px;font-weight:400}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.sc-ion-buttons-ios-s ion-button{margin-left:unset;margin-right:unset;-webkit-margin-start:2px;margin-inline-start:2px;-webkit-margin-end:2px;margin-inline-end:2px}}.sc-ion-buttons-ios-s ion-button:not(.button-round){--border-radius:4px}.sc-ion-buttons-ios-h.ion-color.sc-ion-buttons-ios-s .button,.ion-color .sc-ion-buttons-ios-h.sc-ion-buttons-ios-s .button{--color:initial;--border-color:initial;--background-focused:var(--ion-color-contrast)}.sc-ion-buttons-ios-h.ion-color.sc-ion-buttons-ios-s .button-solid,.ion-color .sc-ion-buttons-ios-h.sc-ion-buttons-ios-s .button-solid{--background:var(--ion-color-contrast);--background-focused:#000;--background-focused-opacity:.12;--background-activated:#000;--background-activated-opacity:.12;--background-hover:var(--ion-color-base);--background-hover-opacity:0.45;--color:var(--ion-color-base);--color-focused:var(--ion-color-base)}.sc-ion-buttons-ios-h.ion-color.sc-ion-buttons-ios-s .button-clear,.ion-color .sc-ion-buttons-ios-h.sc-ion-buttons-ios-s .button-clear{--color-activated:var(--ion-color-contrast);--color-focused:var(--ion-color-contrast)}.sc-ion-buttons-ios-h.ion-color.sc-ion-buttons-ios-s .button-outline,.ion-color .sc-ion-buttons-ios-h.sc-ion-buttons-ios-s .button-outline{--color-activated:var(--ion-color-base);--color-focused:var(--ion-color-contrast)}.sc-ion-buttons-ios-s .button-clear,.sc-ion-buttons-ios-s .button-outline{--background-activated:transparent;--background-focused:currentColor;--background-hover:transparent}.sc-ion-buttons-ios-s .button-solid:not(.ion-color){--background-focused:#000;--background-focused-opacity:.12;--background-activated:#000;--background-activated-opacity:.12}.sc-ion-buttons-ios-s ion-icon[slot=start]{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;margin-right:0.3em;font-size:24px;line-height:0.67}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.sc-ion-buttons-ios-s ion-icon[slot=start]{margin-right:unset;-webkit-margin-end:0.3em;margin-inline-end:0.3em}}.sc-ion-buttons-ios-s ion-icon[slot=end]{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;margin-left:0.4em;font-size:24px;line-height:0.67}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.sc-ion-buttons-ios-s ion-icon[slot=end]{margin-left:unset;-webkit-margin-start:0.4em;margin-inline-start:0.4em}}.sc-ion-buttons-ios-s ion-icon[slot=icon-only]{padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;font-size:28px;line-height:0.67}</style><style>.item.sc-ion-label-ios-h,.item .sc-ion-label-ios-h{--color:initial;display:block;color:var(--color);font-family:var(--ion-font-family, inherit);font-size:inherit;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box}.ion-color.sc-ion-label-ios-h{color:var(--ion-color-base)}.ion-text-wrap.sc-ion-label-ios-h,[text-wrap].sc-ion-label-ios-h{white-space:normal}.item-interactive-disabled.sc-ion-label-ios-h:not(.item-multiple-inputs),.item-interactive-disabled:not(.item-multiple-inputs) .sc-ion-label-ios-h{cursor:default;opacity:0.3;pointer-events:none}.item-input.sc-ion-label-ios-h,.item-input .sc-ion-label-ios-h{-ms-flex:initial;flex:initial;max-width:200px;pointer-events:none}.item-textarea.sc-ion-label-ios-h,.item-textarea .sc-ion-label-ios-h{-ms-flex-item-align:baseline;align-self:baseline}.label-fixed.sc-ion-label-ios-h{-ms-flex:0 0 100px;flex:0 0 100px;width:100px;min-width:100px;max-width:200px}.label-stacked.sc-ion-label-ios-h,.label-floating.sc-ion-label-ios-h{margin-bottom:0;-ms-flex-item-align:stretch;align-self:stretch;width:auto;max-width:100%}.label-no-animate.label-floating.sc-ion-label-ios-h{-webkit-transition:none;transition:none}.sc-ion-label-ios-s h1,.sc-ion-label-ios-s h2,.sc-ion-label-ios-s h3,.sc-ion-label-ios-s h4,.sc-ion-label-ios-s h5,.sc-ion-label-ios-s h6{text-overflow:inherit;overflow:inherit}.ion-text-wrap.sc-ion-label-ios-h,[text-wrap].sc-ion-label-ios-h{font-size:14px;line-height:1.5}.label-stacked.sc-ion-label-ios-h{margin-bottom:4px;font-size:14px}.label-floating.sc-ion-label-ios-h{margin-bottom:0;-webkit-transform:translate3d(0,  29px,  0);transform:translate3d(0,  29px,  0);-webkit-transform-origin:left top;transform-origin:left top;-webkit-transition:-webkit-transform 150ms ease-in-out;transition:-webkit-transform 150ms ease-in-out;transition:transform 150ms ease-in-out;transition:transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out}[dir=rtl].sc-ion-label-ios-h -no-combinator.label-floating.sc-ion-label-ios-h,[dir=rtl] .sc-ion-label-ios-h -no-combinator.label-floating.sc-ion-label-ios-h,[dir=rtl].label-floating.sc-ion-label-ios-h,[dir=rtl] .label-floating.sc-ion-label-ios-h{-webkit-transform-origin:right top;transform-origin:right top}.item-textarea.label-floating.sc-ion-label-ios-h,.item-textarea .label-floating.sc-ion-label-ios-h{-webkit-transform:translate3d(0,  28px,  0);transform:translate3d(0,  28px,  0)}.item-has-focus.label-floating.sc-ion-label-ios-h,.item-has-focus .label-floating.sc-ion-label-ios-h,.item-has-placeholder.sc-ion-label-ios-h:not(.item-input).label-floating,.item-has-placeholder:not(.item-input) .label-floating.sc-ion-label-ios-h,.item-has-value.label-floating.sc-ion-label-ios-h,.item-has-value .label-floating.sc-ion-label-ios-h{-webkit-transform:translate3d(0,  0,  0) scale(0.82);transform:translate3d(0,  0,  0) scale(0.82)}.sc-ion-label-ios-s h1{margin-left:0;margin-right:0;margin-top:3px;margin-bottom:2px;font-size:22px;font-weight:normal}.sc-ion-label-ios-s h2{margin-left:0;margin-right:0;margin-top:0;margin-bottom:2px;font-size:17px;font-weight:normal}.sc-ion-label-ios-s h3,.sc-ion-label-ios-s h4,.sc-ion-label-ios-s h5,.sc-ion-label-ios-s h6{margin-left:0;margin-right:0;margin-top:0;margin-bottom:3px;font-size:14px;font-weight:normal;line-height:normal}.sc-ion-label-ios-s p{margin-left:0;margin-right:0;margin-top:0;margin-bottom:2px;font-size:14px;line-height:normal;text-overflow:inherit;overflow:inherit}.sc-ion-label-ios-s>p{color:rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.4)}.sc-ion-label-ios-h.ion-color.sc-ion-label-ios-s>p,.ion-color .sc-ion-label-ios-h.sc-ion-label-ios-s>p{color:inherit}.sc-ion-label-ios-s h2:last-child,.sc-ion-label-ios-s h3:last-child,.sc-ion-label-ios-s h4:last-child,.sc-ion-label-ios-s h5:last-child,.sc-ion-label-ios-s h6:last-child,.sc-ion-label-ios-s p:last-child{margin-bottom:0}</style><style>.sc-ion-input-ios-h{--placeholder-color:initial;--placeholder-font-style:initial;--placeholder-font-weight:initial;--placeholder-opacity:.5;--padding-top:0;--padding-end:0;--padding-bottom:0;--padding-start:0;--background:transparent;--color:initial;display:-ms-flexbox;display:flex;position:relative;-ms-flex:1;flex:1;-ms-flex-align:center;align-items:center;width:100%;padding:0 !important;background:var(--background);color:var(--color);font-family:var(--ion-font-family, inherit);z-index:2}ion-item.sc-ion-input-ios-h:not(.item-label),ion-item:not(.item-label) .sc-ion-input-ios-h{--padding-start:0}.ion-color.sc-ion-input-ios-h{color:var(--ion-color-base)}.native-input.sc-ion-input-ios{border-radius:var(--border-radius);padding-left:var(--padding-start);padding-right:var(--padding-end);padding-top:var(--padding-top);padding-bottom:var(--padding-bottom);font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;display:inline-block;-ms-flex:1;flex:1;width:100%;max-width:100%;max-height:100%;border:0;outline:none;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.native-input.sc-ion-input-ios{padding-left:unset;padding-right:unset;-webkit-padding-start:var(--padding-start);padding-inline-start:var(--padding-start);-webkit-padding-end:var(--padding-end);padding-inline-end:var(--padding-end)}}.native-input.sc-ion-input-ios::-webkit-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-ios::-moz-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-ios:-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-ios::-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-ios::placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-ios:-webkit-autofill{background-color:transparent}.native-input.sc-ion-input-ios:invalid{-webkit-box-shadow:none;box-shadow:none}.native-input.sc-ion-input-ios::-ms-clear{display:none}.native-input[disabled].sc-ion-input-ios{opacity:0.4}.cloned-input.sc-ion-input-ios{left:0;top:0;position:absolute;pointer-events:none}[dir=rtl].sc-ion-input-ios .cloned-input.sc-ion-input-ios,[dir=rtl].sc-ion-input-ios-h .cloned-input.sc-ion-input-ios,[dir=rtl] .sc-ion-input-ios-h .cloned-input.sc-ion-input-ios{left:unset;right:unset;right:0}.input-clear-icon.sc-ion-input-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;background-position:center;border:0;outline:none;background-color:transparent;background-repeat:no-repeat;visibility:hidden;-webkit-appearance:none;-moz-appearance:none;appearance:none}.input-clear-icon.sc-ion-input-ios:focus{opacity:0.5}.has-value.sc-ion-input-ios-h .input-clear-icon.sc-ion-input-ios{visibility:visible}.has-focus.sc-ion-input-ios-h{pointer-events:none}.has-focus.sc-ion-input-ios-h input.sc-ion-input-ios,.has-focus.sc-ion-input-ios-h a.sc-ion-input-ios,.has-focus.sc-ion-input-ios-h button.sc-ion-input-ios{pointer-events:auto}.item-label-floating.item-has-placeholder.sc-ion-input-ios-h:not(.item-has-value),.item-label-floating.item-has-placeholder:not(.item-has-value) .sc-ion-input-ios-h{opacity:0}.item-label-floating.item-has-placeholder.sc-ion-input-ios-h:not(.item-has-value).item-has-focus,.item-label-floating.item-has-placeholder:not(.item-has-value).item-has-focus .sc-ion-input-ios-h{-webkit-transition:opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);transition:opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);opacity:1}.sc-ion-input-ios-h{--padding-top:10px;--padding-end:10px;--padding-bottom:10px;--padding-start:0;font-size:inherit}.item-label-stacked.sc-ion-input-ios-h,.item-label-stacked .sc-ion-input-ios-h,.item-label-floating.sc-ion-input-ios-h,.item-label-floating .sc-ion-input-ios-h{--padding-top:8px;--padding-bottom:8px;--padding-start:0px}.input-clear-icon.sc-ion-input-ios{background-image:url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'><path%20fill='var(--ion-color-step-600,%20%23666666)'%20d='M403.1,108.9c-81.2-81.2-212.9-81.2-294.2,0s-81.2,212.9,0,294.2c81.2,81.2,212.9,81.2,294.2,0S484.3,190.1,403.1,108.9z%20M352,340.2L340.2,352l-84.4-84.2l-84,83.8L160,339.8l84-83.8l-84-83.8l11.8-11.8l84,83.8l84.4-84.2l11.8,11.8L267.6,256L352,340.2z'/></svg>");width:30px;height:30px;background-size:18px}</style><link rel="icon" type="image/png" href="http://localhost:8100/assets/icon/favicon.png">
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="./Ionic App_files/styles.css"><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */</style><script charset="utf-8" src="./Ionic App_files/common.js.download"></script><script charset="utf-8" src="./Ionic App_files/2.js.download"></script><script charset="utf-8" src="./Ionic App_files/forgot-password-forgot-password-module.js.download"></script><script charset="utf-8" src="./Ionic App_files/swipe-back-ee838cf8-js.js.download"></script><style>ion-content[_ngcontent-wwf-c132] {
+  --background: url('background1.jpg');
+  --background-repeat: no-repeat;
+  --background-size: cover;
+  z-index: 2;
+}
+
+.logo[_ngcontent-wwf-c132] {
+  --background: url('logo.JPG');
+  position: fixed;
+  top: 20px;
+  width: 210px;
+  left: 5%;
+}
+
+#border[_ngcontent-wwf-c132] {
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+h3[_ngcontent-wwf-c132] {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.email[_ngcontent-wwf-c132] {
+  color: grey;
+}
+
+ion-item[_ngcontent-wwf-c132] {
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+ion-button[_ngcontent-wwf-c132] {
+  text-transform: capitalize;
+  margin: 40px;
+}
+
+.button[_ngcontent-wwf-c132] {
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+}
+
+.Rbutton[_ngcontent-wwf-c132] {
+  --background: rgb(255,100,87);
+  --background: linear-gradient(90deg, rgba(255,100,87,1) 0%, rgba(223,37,85,1) 100%);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxvQ0FBQTtFQUNBLDhCQUFBO0VBQ0Esd0JBQUE7RUFDRCxVQUFBO0FBQ0Q7O0FBSUE7RUFFSSw2QkFBQTtFQUNELGVBQUE7RUFDQSxTQUFBO0VBQ0EsWUFBQTtFQUNBLFFBQUE7QUFGSDs7QUFNRztFQUNDLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLDRCQUFBO0VBQ0EsNkJBQUE7RUFDQSxVQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0FBSEo7O0FBTUk7RUFDRSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0YsaUJBQUE7QUFISjs7QUFPUTtFQUVJLFdBQUE7QUFMWjs7QUFRWTtFQUNJLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQUxoQjs7QUFRZ0I7RUFFSSwwQkFBQTtFQUVBLFlBQUE7QUFQcEI7O0FBV29CO0VBQ0ksbUJBQUE7RUFDQSxzQkFBQTtBQVJ4Qjs7QUFXc0I7RUFFRSw2QkFBQTtFQUNGLG1GQUFBO0FBVHRCIiwiZmlsZSI6ImZvcmdvdC1wYXNzd29yZC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tY29udGVudHtcclxuICAtLWJhY2tncm91bmQ6IHVybCguLi8uLi9hc3NldHMvaW1hZ2VzL2JhY2tncm91bmQxLmpwZyk7XHJcbiAgLS1iYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIC0tYmFja2dyb3VuZC1zaXplOiBjb3ZlcjsgXHJcbiB6LWluZGV4OiAyO1xyXG5cclxufVxyXG5cclxuXHJcbi5sb2dve1xyXG5cclxuICAgIC0tYmFja2dyb3VuZDogdXJsKC4uLy4uL2Fzc2V0cy9pbWFnZXMvbG9nby5KUEcpO1xyXG4gICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgIHRvcDogMjBweDtcclxuICAgd2lkdGg6IDIxMHB4O1xyXG4gICBsZWZ0OiA1JTtcclxuICAgICBcclxuICAgfVxyXG5cclxuICAgI2JvcmRlcntcclxuICAgIGJvcmRlci13aWR0aDogM3B4O1xyXG4gICAgYm9yZGVyLWNvbG9yOiB3aGl0ZTtcclxuICAgIGJvcmRlci1zdHlsZTogc29saWQ7XHJcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiA2MHB4O1xyXG4gICAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDYwcHg7XHJcbiAgICB6LWluZGV4OiAxO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBsZWZ0OiAwJTtcclxuICAgIHJpZ2h0OiAwJTtcclxuICAgIGJvdHRvbTogMCU7XHJcbiAgICB9XHJcblxyXG4gICAgaDN7XHJcbiAgICAgIG1hcmdpbi10b3A6IDQwcHg7XHJcbiAgICAgIG1hcmdpbi1sZWZ0OjMwcHg7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIFxyXG4gICAgfVxyXG5cclxuICAgICAgICAuZW1haWx7XHJcblxyXG4gICAgICAgICAgICBjb2xvcjogZ3JleTtcclxuICAgICAgICAgICAgXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgaW9uLWl0ZW17XHJcbiAgICAgICAgICAgICAgICBtYXJnaW4tdG9wOiAyNXB4O1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDQwcHg7XHJcbiAgICAgICAgICAgICAgICBtYXJnaW4tcmlnaHQ6IDQwcHg7XHJcbiAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIGlvbi1idXR0b257XHJcblxyXG4gICAgICAgICAgICAgICAgICAgIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xyXG4gICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgIG1hcmdpbjogNDBweDtcclxuICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLmJ1dHRvbntcclxuICAgICAgICAgICAgICAgICAgICAgICAgLS1wYWRkaW5nLXRvcDogMzBweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgLS1wYWRkaW5nLWJvdHRvbTogMzBweDtcclxuICAgICAgICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgICAgLlJidXR0b257XHJcblxyXG4gICAgICAgICAgICAgICAgICAgICAgICAtLWJhY2tncm91bmQ6IHJnYigyNTUsMTAwLDg3KTtcclxuICAgICAgICAgICAgICAgICAgICAgIC0tYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDkwZGVnLCByZ2JhKDI1NSwxMDAsODcsMSkgMCUsIHJnYmEoMjIzLDM3LDg1LDEpIDEwMCUpO1xyXG4gICAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICAgICAgICB9ICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgICAgICAgXHJcbiAgICAgICAgICAgICAgICAgICAgICJdfQ== */</style><script charset="utf-8" src="./Ionic App_files/home-home-module.js.download"></script><script charset="utf-8" src="./Ionic App_files/sign-in-sign-in-module.js.download"></script><script charset="utf-8" src="./Ionic App_files/profile-profile-module.js.download"></script><script charset="utf-8" src="./Ionic App_files/4.js.download"></script><script charset="utf-8" src="./Ionic App_files/17.js.download"></script><script charset="utf-8" src="./Ionic App_files/15.js.download"></script><script charset="utf-8" src="./Ionic App_files/6.js.download"></script><script charset="utf-8" src="./Ionic App_files/tap-click-cc1ae2b2-js.js.download"></script><script charset="utf-8" src="./Ionic App_files/input-shims-73f15161-js.js.download"></script><script charset="utf-8" src="./Ionic App_files/keyboard-5742b5da-js.js.download"></script><script charset="utf-8" src="./Ionic App_files/focus-visible-f4ad4f1a-js.js.download"></script><style>ion-content[_ngcontent-wwf-c133] {
+  --background: url('background1.jpg');
+  --background-repeat: no-repeat;
+  --background-size: cover;
+  z-index: 2;
+}
+
+h3[_ngcontent-wwf-c133] {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.email[_ngcontent-wwf-c133] {
+  color: grey;
+}
+
+ion-item[_ngcontent-wwf-c133] {
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+ion-button[_ngcontent-wwf-c133] {
+  text-transform: capitalize;
+  margin: 40px;
+}
+
+.button[_ngcontent-wwf-c133] {
+  --padding-top: 30px;
+  --padding-bottom: 30px;
+}
+
+ion-text[_ngcontent-wwf-c133] {
+  color: grey;
+}
+
+div[_ngcontent-wwf-c133] {
+  text-align: center;
+}
+
+.Rbutton[_ngcontent-wwf-c133] {
+  --background: rgb(255,100,87);
+  --background: linear-gradient(90deg, rgba(255,100,87,1) 0%, rgba(223,37,85,1) 100%);
+}
+
+#border[_ngcontent-wwf-c133] {
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.logo[_ngcontent-wwf-c133] {
+  --background: url('logo.JPG');
+  position: fixed;
+  top: 20px;
+  width: 210px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGhvbWUucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0NBQUE7RUFDQSw4QkFBQTtFQUNBLHdCQUFBO0VBQ0QsVUFBQTtBQUNEOztBQUdBO0VBQ0UsZ0JBQUE7RUFDQSxpQkFBQTtFQUNGLGlCQUFBO0FBQUE7O0FBSUE7RUFFQSxXQUFBO0FBRkE7O0FBTUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFIQTs7QUFPQTtFQUVBLDBCQUFBO0VBRUEsWUFBQTtBQU5BOztBQVdBO0VBQ0UsbUJBQUE7RUFDQSxzQkFBQTtBQVJGOztBQVlBO0VBRUEsV0FBQTtBQVZBOztBQWNBO0VBQ0Usa0JBQUE7QUFYRjs7QUFjQTtFQUVFLDZCQUFBO0VBQ0YsbUZBQUE7QUFaQTs7QUFrQkE7RUFDQSxpQkFBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSw0QkFBQTtFQUNBLDZCQUFBO0VBQ0EsVUFBQTtFQUNBLHVCQUFBO0VBQ0EsZUFBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtBQWZBOztBQW1CQTtFQUVDLDZCQUFBO0VBQ0QsZUFBQTtFQUNBLFNBQUE7RUFDQSxZQUFBO0FBakJBIiwiZmlsZSI6ImhvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLWNvbnRlbnR7XG4gIC0tYmFja2dyb3VuZDogdXJsKC4uLy4uL2Fzc2V0cy9pbWFnZXMvYmFja2dyb3VuZDEuanBnKTtcbiAgLS1iYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAtLWJhY2tncm91bmQtc2l6ZTogY292ZXI7IFxuIHotaW5kZXg6IDI7XG5cbn1cblxuaDN7XG4gIG1hcmdpbi10b3A6IDQwcHg7XG4gIG1hcmdpbi1sZWZ0OjMwcHg7XG5mb250LXdlaWdodDogYm9sZDtcblxufVxuXG4uZW1haWx7XG5cbmNvbG9yOiBncmV5O1xuXG59XG5cbmlvbi1pdGVte1xubWFyZ2luLXRvcDogMjVweDtcbm1hcmdpbi1sZWZ0OiA0MHB4O1xubWFyZ2luLXJpZ2h0OiA0MHB4O1xuXG59XG5cbmlvbi1idXR0b257XG5cbnRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuXG5tYXJnaW46IDQwcHg7XG5cblxufVxuXG4uYnV0dG9ue1xuICAtLXBhZGRpbmctdG9wOiAzMHB4O1xuICAtLXBhZGRpbmctYm90dG9tOiAzMHB4O1xuXG59XG5cbmlvbi10ZXh0e1xuXG5jb2xvcjogZ3JleTtcblxuXG59XG5kaXZ7XG4gIHRleHQtYWxpZ246ICBjZW50ZXI7XG59XG5cbi5SYnV0dG9ue1xuXG4gIC0tYmFja2dyb3VuZDogcmdiKDI1NSwxMDAsODcpO1xuLS1iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoMjU1LDEwMCw4NywxKSAwJSwgcmdiYSgyMjMsMzcsODUsMSkgMTAwJSk7XG5cbn1cblxuXG5cbiNib3JkZXJ7XG5ib3JkZXItd2lkdGg6IDNweDtcbmJvcmRlci1jb2xvcjogd2hpdGU7XG5ib3JkZXItc3R5bGU6IHNvbGlkO1xuYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogNjBweDtcbmJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiA2MHB4O1xuei1pbmRleDogMTtcbmJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xucG9zaXRpb246IGZpeGVkO1xubGVmdDogMCU7XG5yaWdodDogMCU7XG5ib3R0b206IDAlO1xufVxuXG5cbi5sb2dve1xuXG4gLS1iYWNrZ3JvdW5kOiB1cmwoLi4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvLkpQRyk7XG5wb3NpdGlvbjogZml4ZWQ7XG50b3A6IDIwcHg7XG53aWR0aDogMjEwcHg7XG4gIFxufVxuXG4iXX0= */</style><script charset="utf-8" src="./Ionic App_files/38.js.download"></script><style>ion-content[_ngcontent-wwf-c134] {
+  --background: url('background1.jpg');
+  --background-repeat: no-repeat;
+  --background-size: cover;
+  z-index: 2;
+}
+
+h3[_ngcontent-wwf-c134] {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.email[_ngcontent-wwf-c134] {
+  color: grey;
+}
+
+ion-item[_ngcontent-wwf-c134] {
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+ion-button[_ngcontent-wwf-c134] {
+  text-transform: capitalize;
+  margin: 40px;
+}
+
+#margin[_ngcontent-wwf-c134] {
+  position: relative;
+  bottom: 11px;
+}
+
+div[_ngcontent-wwf-c134] {
+  text-align: center;
+}
+
+.Rbutton[_ngcontent-wwf-c134] {
+  --background: rgb(255,100,87);
+  --background: linear-gradient(90deg, rgba(255,100,87,1) 0%, rgba(223,37,85,1) 100%);
+}
+
+#border[_ngcontent-wwf-c134] {
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.logo[_ngcontent-wwf-c134] {
+  --background: url('logo.JPG');
+  position: fixed;
+  top: 20px;
+  width: 210px;
+}
+
+.my-custom-class[_ngcontent-wwf-c134]   .alert-wrapper[_ngcontent-wwf-c134] {
+  background: #e5e5e5;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXHNpZ24taW4ucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0NBQUE7RUFDQSw4QkFBQTtFQUNBLHdCQUFBO0VBQ0QsVUFBQTtBQUNEOztBQUdBO0VBQ0UsZ0JBQUE7RUFDQSxpQkFBQTtFQUNGLGlCQUFBO0FBQUE7O0FBSUk7RUFFQSxXQUFBO0FBRko7O0FBTUk7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFISjs7QUFPSTtFQUVBLDBCQUFBO0VBRUEsWUFBQTtBQU5KOztBQWFBO0VBRUksa0JBQUE7RUFDQSxZQUFBO0FBWEo7O0FBYUk7RUFDRSxrQkFBQTtBQVZOOztBQWFJO0VBRUUsNkJBQUE7RUFDRixtRkFBQTtBQVhKOztBQWlCSTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLDRCQUFBO0VBQ0EsNkJBQUE7RUFDQSxVQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0FBZEo7O0FBa0JJO0VBRUMsNkJBQUE7RUFDRCxlQUFBO0VBQ0EsU0FBQTtFQUNBLFlBQUE7QUFoQko7O0FBb0JJO0VBQ0UsbUJBQUE7QUFqQk4iLCJmaWxlIjoic2lnbi1pbi5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tY29udGVudHtcclxuICAtLWJhY2tncm91bmQ6IHVybCguLi8uLi9hc3NldHMvaW1hZ2VzL2JhY2tncm91bmQxLmpwZyk7XHJcbiAgLS1iYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIC0tYmFja2dyb3VuZC1zaXplOiBjb3ZlcjsgXHJcbiB6LWluZGV4OiAyO1xyXG5cclxufVxyXG5cclxuaDN7XHJcbiAgbWFyZ2luLXRvcDogNDBweDtcclxuICBtYXJnaW4tbGVmdDozMHB4O1xyXG5mb250LXdlaWdodDogYm9sZDtcclxuXHJcbn1cclxuICAgIFxyXG4gICAgLmVtYWlse1xyXG4gICAgXHJcbiAgICBjb2xvcjogZ3JleTtcclxuICAgIFxyXG4gICAgfVxyXG4gICAgXHJcbiAgICBpb24taXRlbXtcclxuICAgIG1hcmdpbi10b3A6IDI1cHg7XHJcbiAgICBtYXJnaW4tbGVmdDogNDBweDtcclxuICAgIG1hcmdpbi1yaWdodDogNDBweDtcclxuICAgIFxyXG4gICAgfVxyXG4gICAgXHJcbiAgICBpb24tYnV0dG9ue1xyXG4gICAgXHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcclxuICAgIFxyXG4gICAgbWFyZ2luOiA0MHB4O1xyXG4gICAgXHJcbiAgICBcclxuICAgIH1cclxuICAgIFxyXG4gICBcclxuICAgIFxyXG4jbWFyZ2lue1xyXG5cclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGJvdHRvbTogMTFweFxyXG59XHJcbiAgICBkaXZ7XHJcbiAgICAgIHRleHQtYWxpZ246ICBjZW50ZXI7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIC5SYnV0dG9ue1xyXG4gICAgXHJcbiAgICAgIC0tYmFja2dyb3VuZDogcmdiKDI1NSwxMDAsODcpO1xyXG4gICAgLS1iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoMjU1LDEwMCw4NywxKSAwJSwgcmdiYSgyMjMsMzcsODUsMSkgMTAwJSk7XHJcbiAgICBcclxuICAgIH1cclxuICAgIFxyXG4gICAgXHJcbiAgICBcclxuICAgICNib3JkZXJ7XHJcbiAgICBib3JkZXItd2lkdGg6IDNweDtcclxuICAgIGJvcmRlci1jb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItc3R5bGU6IHNvbGlkO1xyXG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogNjBweDtcclxuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiA2MHB4O1xyXG4gICAgei1pbmRleDogMTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgbGVmdDogMCU7XHJcbiAgICByaWdodDogMCU7XHJcbiAgICBib3R0b206IDAlO1xyXG4gICAgfVxyXG4gICAgXHJcbiAgICBcclxuICAgIC5sb2dve1xyXG4gICAgXHJcbiAgICAgLS1iYWNrZ3JvdW5kOiB1cmwoLi4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvLkpQRyk7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICB0b3A6IDIwcHg7XHJcbiAgICB3aWR0aDogMjEwcHg7XHJcbiAgICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5teS1jdXN0b20tY2xhc3MgLmFsZXJ0LXdyYXBwZXIge1xyXG4gICAgICBiYWNrZ3JvdW5kOiAjZTVlNWU1O1xyXG4gICAgfVxyXG4gICAgXHJcbiAgICAiXX0= */</style></head>
+
+<body cz-shortcut-listen="true">
+  <app-root _nghost-wwf-c131="" ng-version="11.2.14"><ion-app _ngcontent-wwf-c131="" class="ios ion-page force-statusbar-padding hydrated"><ion-router-outlet _ngcontent-wwf-c131="" class="hydrated"><app-home _nghost-wwf-c133="" class="ion-page" style="z-index: 99;"><ion-content _ngcontent-wwf-c133="" fullscreen="" ng-reflect-fullscreen="" class="ios overscroll hydrated" style="--offset-top:0px; --offset-bottom:0px;"><ion-item _ngcontent-wwf-c133="" class="logo item ios ion-focusable hydrated"></ion-item><ion-toolbar _ngcontent-wwf-c133="" id="border" class="toolbar-interactive toolbar-input ios in-toolbar hydrated"><h3 _ngcontent-wwf-c133="">Welcome</h3><form _ngcontent-wwf-c133="" novalidate="" ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-invalid"><ion-item _ngcontent-wwf-c133="" class="ion-untouched ion-pristine ion-invalid item-interactive item-input item ios ion-focusable hydrated item-label item-label-floating"><ion-label _ngcontent-wwf-c133="" position="floating" class="email sc-ion-label-ios-h sc-ion-label-ios-s ios label-floating hydrated" ng-reflect-position="floating" id="ion-input-1-lbl">Email</ion-label><ion-input _ngcontent-wwf-c133="" type="email" formcontrolname="email" required="" ng-reflect-type="email" ng-reflect-required="" ng-reflect-name="email" class="ng-untouched ng-pristine ng-invalid ion-untouched ion-pristine ion-invalid sc-ion-input-ios-h sc-ion-input-ios-s ios hydrated"><input class="native-input sc-ion-input-ios" aria-labelledby="ion-input-1-lbl" autocapitalize="off" autocomplete="off" autocorrect="off" name="ion-input-1" placeholder="" required="" spellcheck="false" type="email"></ion-input></ion-item><ion-item _ngcontent-wwf-c133="" class="ion-untouched ion-pristine ion-invalid item-interactive item-input item ios ion-focusable hydrated item-label item-label-floating"><ion-label _ngcontent-wwf-c133="" position="floating" class="email sc-ion-label-ios-h sc-ion-label-ios-s ios label-floating hydrated" ng-reflect-position="floating" id="ion-input-2-lbl">Password</ion-label><ion-input _ngcontent-wwf-c133="" type="password" formcontrolname="password" required="" ng-reflect-type="password" ng-reflect-required="" ng-reflect-name="password" class="ng-untouched ng-pristine ng-invalid ion-untouched ion-pristine ion-invalid sc-ion-input-ios-h sc-ion-input-ios-s ios hydrated"><input class="native-input sc-ion-input-ios" aria-labelledby="ion-input-2-lbl" autocapitalize="off" autocomplete="off" autocorrect="off" name="ion-input-2" placeholder="" required="" spellcheck="false" type="password"></ion-input></ion-item><div _ngcontent-wwf-c133=""><ion-button _ngcontent-wwf-c133="" expand="block" fill="outline" shape="round" color="danger" type="submit" class="button ion-color ion-color-danger ios button-block button-round button-outline in-toolbar ion-activatable ion-focusable hydrated" ng-reflect-expand="block" ng-reflect-fill="outline" ng-reflect-shape="round" ng-reflect-color="danger" ng-reflect-type="submit">Sign In</ion-button><ion-text _ngcontent-wwf-c133="" routerlink="/forgot-password" router-direction="forward" tabindex="0" ng-reflect-router-link="/forgot-password" class="ios hydrated"> Forgot Password? </ion-text><ion-button _ngcontent-wwf-c133="" expand="block" fill="solid" shape="round" routerlink="/sign-in" router-direction="forward" class="Rbutton ios button button-block button-round button-solid in-toolbar ion-activatable ion-focusable hydrated" ng-reflect-expand="block" ng-reflect-fill="solid" ng-reflect-shape="round" tabindex="0" ng-reflect-router-link="/sign-in">Create Account</ion-button></div></form></ion-toolbar></ion-content></app-home></ion-router-outlet><!--container--></ion-app></app-root>
+<script src="./Ionic App_files/runtime.js.download" defer=""></script><script src="./Ionic App_files/polyfills.js.download" defer=""></script><script src="./Ionic App_files/styles.js.download" defer=""></script><script src="./Ionic App_files/vendor.js.download" defer=""></script><script src="./Ionic App_files/main.js.download" defer=""></script>
+
+
+</body></html>

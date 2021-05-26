@@ -1,0 +1,14 @@
+{
+  "appId": "com.gimmies.com",
+  "appName": "IonicPractice",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+      
+    }
+  },
+  "cordova": {}
+}

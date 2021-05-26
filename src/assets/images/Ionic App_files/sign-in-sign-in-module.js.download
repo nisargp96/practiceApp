@@ -1,0 +1,228 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["sign-in-sign-in-module"],{
+
+/***/ "FuQ6":
+/*!*******************************************!*\
+  !*** ./src/app/sign-in/sign-in.module.ts ***!
+  \*******************************************/
+/*! exports provided: SignInPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignInPageModule", function() { return SignInPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+/* harmony import */ var _sign_in_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sign-in-routing.module */ "j1PK");
+/* harmony import */ var _sign_in_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sign-in.page */ "WawN");
+
+
+
+
+
+
+
+let SignInPageModule = class SignInPageModule {
+};
+SignInPageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+            _sign_in_routing_module__WEBPACK_IMPORTED_MODULE_5__["SignInPageRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"]
+        ],
+        declarations: [_sign_in_page__WEBPACK_IMPORTED_MODULE_6__["SignInPage"]]
+    })
+], SignInPageModule);
+
+
+
+/***/ }),
+
+/***/ "P3na":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/sign-in/sign-in.page.html ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n<ion-content fullscreen>\n\n  <ion-buttons>\n    <ion-back-button defaultHref=\"/home\"></ion-back-button>\n  </ion-buttons>\n\n  <ion-item  class=\"logo\"></ion-item>\n\n  <ion-toolbar id=\"border\">\n    \n    <h3>Create Account</h3>\n    <form [formGroup]=\"ionicForm\" (ngSubmit)=\"submitForm()\" novalidate>\n    <ion-item>\n  \n      <ion-label position=\"floating\" class=\"email\">First Name</ion-label>\n      \n      <ion-input type=\"text\" formControlName=\"name\" required></ion-input>\n    \n    </ion-item>\n   \n    <ion-item>\n  \n      <ion-label position=\"floating\" class=\"email\">Last Name</ion-label>\n      \n      <ion-input  formControlName=\"lastname\" type=\"text\" required></ion-input>\n    \n    </ion-item>\n     \n  \n    <ion-item>\n  \n      <ion-label position=\"floating\" class=\"email\">Email</ion-label>\n      \n      <ion-input formControlName=\"email\" type=\"email\" required></ion-input>\n    \n    </ion-item>\n  \n    <ion-item>\n  \n      <ion-label position=\"floating\" class=\"email\">Password</ion-label>\n      \n      <ion-input formControlName=\"password\" type=\"password\" required></ion-input>\n    \n    </ion-item>\n\n    \n\n  <div>\n    <ion-button expand=\"block\" fill=\"solid\" shape=\"round\" color=\"danger\" class=\"Rbutton\" type=\"submit\" >Submit</ion-button>\n    <ion-text routerLink=\"/home\" router-Direction=\"forward\" id=\"margin\">\n      Already have an account?\n    </ion-text> \n    <ion-text routerLink=\"/home\" router-Direction=\"forward\" color=\"danger\" id=\"margin\">\n          Sign-In\n        </ion-text>\n        \n      </div>\n    </form>\n \n  </ion-toolbar>\n  </ion-content>\n\n\n\n\n  \n  \n");
+
+/***/ }),
+
+/***/ "WawN":
+/*!*****************************************!*\
+  !*** ./src/app/sign-in/sign-in.page.ts ***!
+  \*****************************************/
+/*! exports provided: SignInPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignInPage", function() { return SignInPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_sign_in_page_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./sign-in.page.html */ "P3na");
+/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sign-in.page.scss */ "i5US");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "TEn/");
+
+
+
+
+
+
+let SignInPage = class SignInPage {
+    constructor(formBuilder, toastController) {
+        this.formBuilder = formBuilder;
+        this.toastController = toastController;
+        this.isSubmitted = false;
+    }
+    ngOnInit() {
+        this.ionicForm = this.formBuilder.group({
+            name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].minLength(2)]],
+            lastname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].minLength(2)]],
+            email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')]],
+            password: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].minLength(8),]],
+        });
+    }
+    get errorControl() {
+        return this.ionicForm.controls;
+    }
+    submitForm() {
+        var _a, _b, _c, _d, _e, _f, _g, _h;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            this.isSubmitted = true;
+            if (this.isSubmitted && ((_a = this.ionicForm.controls.name.errors) === null || _a === void 0 ? void 0 : _a.required)) {
+                const toast = yield this.toastController.create({
+                    message: 'First Name required.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_b = this.ionicForm.controls.name.errors) === null || _b === void 0 ? void 0 : _b.minLength)) {
+                const toast = yield this.toastController.create({
+                    message: 'First name is short.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_c = this.ionicForm.controls.lastname.errors) === null || _c === void 0 ? void 0 : _c.required)) {
+                const toast = yield this.toastController.create({
+                    message: 'Last name is required.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_d = this.ionicForm.controls.lastname.errors) === null || _d === void 0 ? void 0 : _d.minLength)) {
+                const toast = yield this.toastController.create({
+                    message: 'Last name is too short.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_e = this.ionicForm.controls.email.errors) === null || _e === void 0 ? void 0 : _e.required)) {
+                const toast = yield this.toastController.create({
+                    message: 'Email is required.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_f = this.ionicForm.controls.email.errors) === null || _f === void 0 ? void 0 : _f.pattern)) {
+                const toast = yield this.toastController.create({
+                    message: 'Please provide valid email id.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_g = this.ionicForm.controls.password.errors) === null || _g === void 0 ? void 0 : _g.required)) {
+                const toast = yield this.toastController.create({
+                    message: 'Password is required.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+            else if (this.isSubmitted && ((_h = this.ionicForm.controls.password.errors) === null || _h === void 0 ? void 0 : _h.minLength)) {
+                const toast = yield this.toastController.create({
+                    message: 'Password should be atleast 8 characters.',
+                    duration: 2000
+                });
+                toast.present();
+            }
+        });
+    }
+};
+SignInPage.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["ToastController"] }
+];
+SignInPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-sign-in',
+        template: _raw_loader_sign_in_page_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], SignInPage);
+
+
+
+/***/ }),
+
+/***/ "i5US":
+/*!*******************************************!*\
+  !*** ./src/app/sign-in/sign-in.page.scss ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("ion-content {\n  --background: url('background1.jpg');\n  --background-repeat: no-repeat;\n  --background-size: cover;\n  z-index: 2;\n}\n\nh3 {\n  margin-top: 40px;\n  margin-left: 30px;\n  font-weight: bold;\n}\n\n.email {\n  color: grey;\n}\n\nion-item {\n  margin-top: 25px;\n  margin-left: 40px;\n  margin-right: 40px;\n}\n\nion-button {\n  text-transform: capitalize;\n  margin: 40px;\n}\n\n#margin {\n  position: relative;\n  bottom: 11px;\n}\n\ndiv {\n  text-align: center;\n}\n\n.Rbutton {\n  --background: rgb(255,100,87);\n  --background: linear-gradient(90deg, rgba(255,100,87,1) 0%, rgba(223,37,85,1) 100%);\n}\n\n#border {\n  border-width: 3px;\n  border-color: white;\n  border-style: solid;\n  border-top-left-radius: 60px;\n  border-top-right-radius: 60px;\n  z-index: 1;\n  background-color: white;\n  position: fixed;\n  left: 0%;\n  right: 0%;\n  bottom: 0%;\n}\n\n.logo {\n  --background: url('logo.JPG');\n  position: fixed;\n  top: 20px;\n  width: 210px;\n}\n\n.my-custom-class .alert-wrapper {\n  background: #e5e5e5;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXHNpZ24taW4ucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0NBQUE7RUFDQSw4QkFBQTtFQUNBLHdCQUFBO0VBQ0QsVUFBQTtBQUNEOztBQUdBO0VBQ0UsZ0JBQUE7RUFDQSxpQkFBQTtFQUNGLGlCQUFBO0FBQUE7O0FBSUk7RUFFQSxXQUFBO0FBRko7O0FBTUk7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFISjs7QUFPSTtFQUVBLDBCQUFBO0VBRUEsWUFBQTtBQU5KOztBQWFBO0VBRUksa0JBQUE7RUFDQSxZQUFBO0FBWEo7O0FBYUk7RUFDRSxrQkFBQTtBQVZOOztBQWFJO0VBRUUsNkJBQUE7RUFDRixtRkFBQTtBQVhKOztBQWlCSTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLDRCQUFBO0VBQ0EsNkJBQUE7RUFDQSxVQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0FBZEo7O0FBa0JJO0VBRUMsNkJBQUE7RUFDRCxlQUFBO0VBQ0EsU0FBQTtFQUNBLFlBQUE7QUFoQko7O0FBb0JJO0VBQ0UsbUJBQUE7QUFqQk4iLCJmaWxlIjoic2lnbi1pbi5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tY29udGVudHtcclxuICAtLWJhY2tncm91bmQ6IHVybCguLi8uLi9hc3NldHMvaW1hZ2VzL2JhY2tncm91bmQxLmpwZyk7XHJcbiAgLS1iYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIC0tYmFja2dyb3VuZC1zaXplOiBjb3ZlcjsgXHJcbiB6LWluZGV4OiAyO1xyXG5cclxufVxyXG5cclxuaDN7XHJcbiAgbWFyZ2luLXRvcDogNDBweDtcclxuICBtYXJnaW4tbGVmdDozMHB4O1xyXG5mb250LXdlaWdodDogYm9sZDtcclxuXHJcbn1cclxuICAgIFxyXG4gICAgLmVtYWlse1xyXG4gICAgXHJcbiAgICBjb2xvcjogZ3JleTtcclxuICAgIFxyXG4gICAgfVxyXG4gICAgXHJcbiAgICBpb24taXRlbXtcclxuICAgIG1hcmdpbi10b3A6IDI1cHg7XHJcbiAgICBtYXJnaW4tbGVmdDogNDBweDtcclxuICAgIG1hcmdpbi1yaWdodDogNDBweDtcclxuICAgIFxyXG4gICAgfVxyXG4gICAgXHJcbiAgICBpb24tYnV0dG9ue1xyXG4gICAgXHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcclxuICAgIFxyXG4gICAgbWFyZ2luOiA0MHB4O1xyXG4gICAgXHJcbiAgICBcclxuICAgIH1cclxuICAgIFxyXG4gICBcclxuICAgIFxyXG4jbWFyZ2lue1xyXG5cclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGJvdHRvbTogMTFweFxyXG59XHJcbiAgICBkaXZ7XHJcbiAgICAgIHRleHQtYWxpZ246ICBjZW50ZXI7XHJcbiAgICB9XHJcbiAgICBcclxuICAgIC5SYnV0dG9ue1xyXG4gICAgXHJcbiAgICAgIC0tYmFja2dyb3VuZDogcmdiKDI1NSwxMDAsODcpO1xyXG4gICAgLS1iYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsIHJnYmEoMjU1LDEwMCw4NywxKSAwJSwgcmdiYSgyMjMsMzcsODUsMSkgMTAwJSk7XHJcbiAgICBcclxuICAgIH1cclxuICAgIFxyXG4gICAgXHJcbiAgICBcclxuICAgICNib3JkZXJ7XHJcbiAgICBib3JkZXItd2lkdGg6IDNweDtcclxuICAgIGJvcmRlci1jb2xvcjogd2hpdGU7XHJcbiAgICBib3JkZXItc3R5bGU6IHNvbGlkO1xyXG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogNjBweDtcclxuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiA2MHB4O1xyXG4gICAgei1pbmRleDogMTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgbGVmdDogMCU7XHJcbiAgICByaWdodDogMCU7XHJcbiAgICBib3R0b206IDAlO1xyXG4gICAgfVxyXG4gICAgXHJcbiAgICBcclxuICAgIC5sb2dve1xyXG4gICAgXHJcbiAgICAgLS1iYWNrZ3JvdW5kOiB1cmwoLi4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvLkpQRyk7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICB0b3A6IDIwcHg7XHJcbiAgICB3aWR0aDogMjEwcHg7XHJcbiAgICAgIFxyXG4gICAgfVxyXG5cclxuICAgIC5teS1jdXN0b20tY2xhc3MgLmFsZXJ0LXdyYXBwZXIge1xyXG4gICAgICBiYWNrZ3JvdW5kOiAjZTVlNWU1O1xyXG4gICAgfVxyXG4gICAgXHJcbiAgICAiXX0= */");
+
+/***/ }),
+
+/***/ "j1PK":
+/*!***************************************************!*\
+  !*** ./src/app/sign-in/sign-in-routing.module.ts ***!
+  \***************************************************/
+/*! exports provided: SignInPageRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignInPageRoutingModule", function() { return SignInPageRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _sign_in_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sign-in.page */ "WawN");
+
+
+
+
+const routes = [
+    {
+        path: '',
+        component: _sign_in_page__WEBPACK_IMPORTED_MODULE_3__["SignInPage"]
+    }
+];
+let SignInPageRoutingModule = class SignInPageRoutingModule {
+};
+SignInPageRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
+    })
+], SignInPageRoutingModule);
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=sign-in-sign-in-module.js.map
